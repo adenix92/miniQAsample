@@ -89,10 +89,10 @@ namespace ayubaweb.Controllers
                     mail.Body = Body;
                     mail.IsBodyHtml = true;
                     SmtpClient smtp = new SmtpClient();
-                    smtp.Host = "mail.minpip.com";
+                    smtp.Host = "port here";
                     smtp.Port = 8889;
                     smtp.UseDefaultCredentials = false;
-                    smtp.Credentials = new System.Net.NetworkCredential("noreply@minpip.com", "Realtech01"); // Enter seders User name and password  
+                    smtp.Credentials = new System.Net.NetworkCredential("password", "password"); // Enter seders User name and password  
                     smtp.EnableSsl = false;
                     smtp.Send(mail);
                         //add email here

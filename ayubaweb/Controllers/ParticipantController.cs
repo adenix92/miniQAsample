@@ -17,18 +17,8 @@ namespace ayubaweb.Controllers
         public ActionResult Index()
         {
             
-             
-            if (Session["Email"]!=null)
-            {
-
-                return View();
-            }
-            else
-            {
-                return RedirectToAction("Error");
-            }
+        //Auth check here, if the user exist or not     
         
-
         }
 
         [HttpPost]
@@ -41,7 +31,7 @@ namespace ayubaweb.Controllers
             {
                 UserProfile userp = new UserProfile();
                 userp.FullName = users.FullName;
-                userp.Email = Request.Form["Email"]; //"adenirangaposa02@gmail.com";
+                userp.Email = Request.Form["Email"]; //"";
                 userp.Country = users.Country;
                 userp.AreaSpecialization = users.AreaSpecialization; //"dosomething";
                 userp.CurrentAddressOrganization = users.CurrentAddressOrganization; //"dosomethig";

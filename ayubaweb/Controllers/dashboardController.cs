@@ -11,7 +11,7 @@ namespace ayubaweb.Controllers
 {
     public class dashboardController : Controller
     {
-        db_a7ad46_qnEntities1 db = new db_a7ad46_qnEntities1();
+        //instance connection of database go here conn
         // GET: dashboard
                 
         public ActionResult Index()

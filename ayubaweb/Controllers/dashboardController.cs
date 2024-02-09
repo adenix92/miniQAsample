@@ -63,7 +63,7 @@ namespace ayubaweb.Controllers
                 db.SaveChanges();
                 if ((int)em.EmailId > 0) {
                     //sending email
-                    var from = "noreply@minpip.com";
+                    var from = "";
                     MailMessage mail = new MailMessage();
                     mail.To.Add(Items.Email);
                      mail.From = new MailAddress(from);

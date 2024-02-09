@@ -89,8 +89,8 @@ namespace ayubaweb.Controllers
                     mail.Body = Body;
                     mail.IsBodyHtml = true;
                     SmtpClient smtp = new SmtpClient();
-                    smtp.Host = "port here";
-                    smtp.Port = 8889;
+                    smtp.Host = "" //host;
+                    smtp.Port = ;//port number
                     smtp.UseDefaultCredentials = false;
                     smtp.Credentials = new System.Net.NetworkCredential("password", "password"); // Enter seders User name and password  
                     smtp.EnableSsl = false;
